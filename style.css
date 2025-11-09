@@ -1,12 +1,12 @@
 body {
-  background: #111;
-  color: #eee;
-  font-family: sans-serif;
+  background: black;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 40px;
 }
 .card {
-  border: 1px solid #444;
+  border: 1px solid white;
   padding: 20px;
   margin-bottom: 20px;
 }
-a { color: cyan; }
+a { color: black; }
