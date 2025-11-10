@@ -1,6 +1,14 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-family: canada-type-gibson, sans-serif;
   color:#A6B1E1;
+  text-align: center;
+}
+
+h3 {
+  font-family: canada-type-gibson, sans-serif;
+  color:#A6B1E1;
+  font-size: medium;
+  text-align: center;
 }
 body {
   background: #4E4C67;
@@ -18,10 +26,16 @@ body {
 a { color: #DCD6F7; }
 footer {
   text-align: center;
+  align-items: center;
   font-family : zalando, sans-serif;
   color: #A6B1E1;
   font-size: 14px;
   margin-top: 40px;
+  width: 100%;
+  display: flex;
+ padding: 10px 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 .mail-button {
     display: inline-block;
@@ -31,10 +45,77 @@ footer {
     text-decoration: none;   
     font-weight: bold;
     border-radius: 8px;       
-    transition: background 0.3s;
+    transition: background 0.5s;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .mail-button:hover {
     background-color:#a4a0b8; 
    color:#4E4C67
+}
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  z-index: 1000;
+}
+
+/* Menü alanı */
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+/* Üç çizgi simgesi */
+.hamburger {
+  font-size: 28px;
+  padding: 15px;
+  cursor: pointer;
+  color: #DCD6F7;
+}
+
+.side-menu {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 150px;
+  height: 100%;
+  padding-top: 90px;
+  transition: left 0.2s ease;
+}
+
+.side-menu a {
+    display: inline-block;
+    padding: 12px 25px;
+    color:#DCD6F7;             
+    text-decoration: none;   
+    font-weight: bold;   
+    transition: background 0.5s;
+}
+
+.side-menu a:hover {
+    background-color:#a4a0b8; 
+   color:#4E4C67
+}
+
+.menu-wrapper:hover .side-menu {
+  left: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer .footer-note {
+  font-family : zalando, sans-serif;
+  color: #A6B1E1;
+  font-size: 12px;
+  text-align: right;
 }
