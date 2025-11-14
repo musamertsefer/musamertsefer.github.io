@@ -5,10 +5,11 @@ h1, h2, h3 h4, h5, h6 {
 }
 
 body {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/background.png");
+  background-image: url("images/background.png");
   background-size: cover;   
-  background-position: center;  
-  background-repeat: no-repeat; 
+  background-position: center;      
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
   color: #DCD6F7;
   font-family: zalando, sans-serif;
   padding: 40px;
@@ -121,7 +122,6 @@ footer .footer-note {
 .site-logo {
  width: 60px;
  height: auto;
- border-radius: 15px;
  display: flex;
  justify-content: flex-end;
  align-items: center;
